@@ -21,7 +21,7 @@ export function Navbar() {
         <div>
           <ModeToggle />
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex space-x-2">
           <Button className="rounded-3xl px-5">Login</Button>
           <Button variant={"secondary"} className="rounded-3xl px-4">
             Register

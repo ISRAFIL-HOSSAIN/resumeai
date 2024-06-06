@@ -1,5 +1,6 @@
 import { PaymentCardComponent } from "@/components/component/payment-card-component";
 import { Button } from "@/components/ui/button";
+import { Chatbot } from "@/public";
 import { Dribbble, ZapIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,8 +27,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full mt-16 ">
-          <div className=" mb-4 flex  justify-center space-x-4  px-4">
+        <div className=" w-full  mt-20  overflow-x-hidden overflow-y-clip">
+          <div className=" mb-4 flex  justify-center space-x-4 px-4 py-7">
             <div className="z-10 flex items-center space-x-2 bg-[#333] py-3 px-4 rounded-xl border-2 border-gray-600 transform rotate-12">
               <TwitterIcon className="h-8 w-8 text-blue-500" />
               <span className="text-gray-50 ">Cryptopunk - Search</span>
@@ -74,9 +75,9 @@ const Hero = () => {
             Tailored Resumes Just in Minutes{" "}
           </h3>
           <div className="px-16  py-10 rounded-xl bg-white items-center flex flex-col justify-center my-5">
-            <div className="bg-black px-16 py-8 flex justify-around items-center space-x-5">
-              <ZapIcon className="h-4 w-4" />
-              <p className="text-xl">Upload Resume </p>
+            <div className="bg-black px-16 py-8 flex justify-around items-center lg:space-x-5 space-x-2">
+              <ZapIcon className="h-4 w-4 " />
+              <p className="lg:text-xl  text-white">Upload Resume </p>
               <XIcon className="h-4 w-4" />
             </div>
           </div>
@@ -98,7 +99,7 @@ const Hero = () => {
           </div>
 
           <div className="mt-16 w-full ">
-            <h3 className="text-gray-800 font-poppins font-[700] text-[40px] leading-6 text-center">{`Merlin's Group AI - Trusted by Many`}</h3>
+            <h3 className="text-gray-800 font-poppins font-[700] text-[40px] lg:leading-6 text-center">{`Merlin's Group AI - Trusted by Many`}</h3>
 
             <div className="grid lg:grid-cols-4 grid-cols-2 mt-10 gap-5 pb-20">
               <div className="rounded-lg bg-gray-100 text-black font-bold text-[24px] font-poppins py-5 text-center">
@@ -139,7 +140,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="bg-gray-100 container py-16">
-              <h3 className="text-gray-800 font-poppins font-[700] text-[40px] leading-6 text-center">{`All platform connect to MG`}</h3>
+              <h3 className="text-gray-800 font-poppins font-[700] text-[40px] lg:leading-6 text-center">{`All platform connect to MG`}</h3>
               <div className="grid lg:grid-cols-8 grid-cols-2 mt-10 gap-5 pb-20">
                 <div className="rounded-lg bg-white text-black font-bold text-[24px] font-poppins py-5 text-center">
                   Microsoft
@@ -188,7 +189,7 @@ const Hero = () => {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-gray-700 px-3 py-1 text-sm ">
+              <div className="inline-block rounded-lg bg-gray-300 px-3 py-1 text-sm ">
                 New Features
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl ">
@@ -203,11 +204,11 @@ const Hero = () => {
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
             <Image
-              src="/placeholder.svg"
+              src={Chatbot}
               width="550"
               height="310"
               alt="Image"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              className="mx-auto aspect-video rounded-xl object-fit object-center sm:w-full lg:order-last"
             />
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6">
@@ -254,7 +255,7 @@ const Hero = () => {
             <h3 className="text-4xl font-[700] tracking-tighter md:text-4xl/tight text-white">
               more career topics{" "}
             </h3>
-            <button className="bg-black rounded-full px-5 py-3 ">
+            <button className="bg-black text-white rounded-full px-5 py-3 ">
               Join Now
             </button>
           </div>
